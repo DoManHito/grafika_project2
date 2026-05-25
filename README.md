@@ -8,6 +8,7 @@ Projekt wykorzystuje krzywe B-sklejane (B-spline) do generowania kształtu liter
 projekt2/
 ├── README.md              # Ten plik
 ├── requirements.txt       # Wymagane zależności
+├── INSTRUKCJA.md          # Instrukcja obsługi 
 ├── config/
 │   └── letter_p_config.py # Konfiguracja kształtu litery P
 ├── src/

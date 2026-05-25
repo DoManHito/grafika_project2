@@ -105,7 +105,7 @@ def main():
     """
     print("Generowanie litery P za pomocą krzywych B-sklejanych...")
     image, curve1, curve2, knots1, knots2 = generate_letter_p_binary_image()
-    save_image(image, "projekt2/output/letter_p_binary.png")
+    save_image(image, "output/letter_p_binary.png")
     print("Generowanie zakończone pomyślnie!")
     print(f"Rozmiar litery: {LETTER_WIDTH}x{LETTER_HEIGHT} pikseli")
     print(f"Rozmiar obrazu: {IMAGE_WIDTH}x{IMAGE_HEIGHT} pikseli")

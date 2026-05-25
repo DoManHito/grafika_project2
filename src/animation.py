@@ -105,16 +105,21 @@ def create_animation_frames(num_frames=200):
     
     for t in range(num_frames):
         progress = np.sin(np.pi * t / num_frames)
-        
         animated_curve2_points = get_morphed_points(progress)
         
         curve1, _ = generate_bspline_curve(CURVE1_CONTROL_POINTS, 2, 4001)
         curve2, _ = generate_bspline_curve(animated_curve2_points, 2, 4001)
         
+        # Dynamiczny, żywy kolor RGB zależny od klatki t
+        r = int(127 + 128 * np.sin(2 * np.pi * t / num_frames))
+        g = int(127 + 128 * np.sin(2 * np.pi * t / num_frames + 2))
+        b = int(127 + 128 * np.sin(2 * np.pi * t / num_frames + 4))
+        
         image = draw_bspline_curves(
             curve1, curve2,
             IMAGE_WIDTH, IMAGE_HEIGHT,
-            MARGIN_X, MARGIN_Y
+            MARGIN_X, MARGIN_Y,
+            color=(r, g, b)
         )
         frames.append(image)
     return frames
@@ -171,7 +176,7 @@ def main():
     
     frames = create_animation_frames(num_frames=200)
     
-    save_animation(frames, "projekt2/output/letter_p_animation.mp4", fps=10)
+    save_animation(frames, "output/letter_p_animation.mp4", fps=10)
     
     print("Generowanie animacji zakończone pomyślnie!")
     
