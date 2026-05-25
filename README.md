@@ -81,9 +81,3 @@ W animacji otwór wewnętrzny litery P ulega deformacji:
 - Parametr `morph_factor` kontroluje stopień deformacji:
   - `morph_factor = 0`: wypukły otwór (stan początkowy)
   - `morph_factor = 1`: wklęsłe zamknięcie przylegające do płaskiej linii
-
-## Elementy oceny
-- Część 1 (20%): Analiza problemu i opis rozwiązania
-- Część 2 (10%): Animacja
-- Kody źródłowe (30%)
-- Wyniki (40%)

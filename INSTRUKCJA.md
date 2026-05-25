@@ -118,10 +118,3 @@ Funkcja `save_animation(frames, filename, fps)` zapisuje animację:
 1. **`num_frames`** - liczba klatek animacji (domyślnie 200)
 2. **`fps`** - klatki na sekundę (domyślnie 10)
 3. **`y_mid`** - pozioma pozycja do której otwór się deformuje (domyślnie -215)
-
-## Elementy oceny
-
-- **Część 1 (20%)**: Analiza problemu i opis rozwiązania
-- **Część 2 (10%)**: Animacja
-- **Kody źródłowe (30%)**: Czytelność, brak redundancji
-- **Wyniki (40%)**: Poprawność i wizualna atrakcyjność
